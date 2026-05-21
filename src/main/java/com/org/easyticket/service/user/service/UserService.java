@@ -1,4 +1,4 @@
-package com.org.easyticket.service;
+package com.org.easyticket.service.user.service;
 
 import com.org.easyticket.dto.requestdto.UserRequestDto;
 import com.org.easyticket.entity.User;

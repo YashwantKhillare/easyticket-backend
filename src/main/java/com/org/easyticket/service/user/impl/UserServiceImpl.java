@@ -1,9 +1,9 @@
-package com.org.easyticket.service.impl;
+package com.org.easyticket.service.user.impl;
 
 import com.org.easyticket.dto.requestdto.UserRequestDto;
 import com.org.easyticket.entity.User;
 import com.org.easyticket.repository.UserRepository;
-import com.org.easyticket.service.UserService;
+import com.org.easyticket.service.user.service.UserService;
 import com.org.easyticket.utils.ValidationUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

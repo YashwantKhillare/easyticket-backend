@@ -2,7 +2,7 @@ package com.org.easyticket.controller;
 
 import com.org.easyticket.dto.requestdto.UserRequestDto;
 import com.org.easyticket.entity.User;
-import com.org.easyticket.service.UserService;
+import com.org.easyticket.service.user.service.UserService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
