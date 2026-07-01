@@ -61,15 +61,15 @@ public class MailController {
         try {
             return applicationContext.getBean(serviceName, Handler.class);
         } catch (Exception e) {
-            log.error("Failed_to_retrieve_Handler_bean_for_KYC_service: "+ serviceName, e);
-            throw new IllegalArgumentException("Handler_bean_not_found_for_KYC_service: " + serviceName, e);
+            log.error("Failed_to_retrieve_Handler_bean_for_Mail_service: "+ serviceName, e);
+            throw new IllegalArgumentException("Handler_bean_not_found_for_Mail_service: " + serviceName, e);
         }
     }
 
     //validating service name is not null not empty...
     private void validateServiceName(String serviceName) {
         if (serviceName == null || serviceName.trim().isEmpty()) {
-            throw new IllegalArgumentException("KYC_service_name_is_required");
+            throw new IllegalArgumentException("Mail_service_name_is_required");
         }
     }
 
@@ -78,7 +78,7 @@ public class MailController {
         try {
             return handler.doPostCall(request, response);
         } catch (Exception e) {
-            log.error("KYC_handler_doPostCall_execution_failed"+ e);
+            log.error("Mail_handler_doPostCall_execution_failed"+ e);
             throw new RuntimeException("Handler_doPostCall_execution_failed", e);
         }
     }

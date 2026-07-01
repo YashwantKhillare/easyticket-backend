@@ -7,7 +7,7 @@ import java.util.Map;
 @Service
 public class ResponseHandleUtil {
 
-    public Map<String, Object> buildSuccessResponse(Object data) {
+    public static Map<String, Object> buildSuccessResponse(Object data) {
         Map<String, Object> response = new HashMap<>();
 
         response.put("status", "SUCCESS");
@@ -16,7 +16,7 @@ public class ResponseHandleUtil {
 
         return response;
     }
-    public Map<String, Object> buildFailureResponse(String message) {
+    public static Map<String, Object> buildFailureResponse(String message) {
         Map<String, Object> response = new HashMap<>();
 
         response.put("status", "FAILURE");
